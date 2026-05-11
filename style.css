@@ -806,13 +806,14 @@ h2 {
   }
 
   .skill-box {
-    flex: 0 0 calc((100% - 28px) / 3);
-    min-width: 110px;
-    min-height: 120px;
-    padding: 18px;
-    font-size: 16px;
-    scroll-snap-align: start;
-  }
+  flex: 0 0 calc((100% - 28px) / 3);
+  min-width: 120px;
+  min-height: 120px;
+  padding: 18px 22px;
+  font-size: 16px;
+  line-height: 1.35;
+  scroll-snap-align: start;
+}
 
   .tools-modern-grid {
     display: flex;
