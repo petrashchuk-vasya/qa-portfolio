@@ -742,14 +742,6 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .skills-modern-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .tools-modern-grid {
-    grid-template-columns: 1fr;
-  }
-
   .contact-layout {
     gap: 28px;
   }
@@ -763,7 +755,19 @@ h2 {
     display: none;
   }
 
+  .experience-list {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .experience-card {
+    flex: 0 0 86%;
+    scroll-snap-align: start;
     display: block;
     padding: 22px;
     border-radius: 22px;
@@ -788,6 +792,53 @@ h2 {
 
   .experience-description {
     font-size: 16px;
+  }
+
+  .skills-modern-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .skill-box {
+    flex: 0 0 calc((100% - 28px) / 3);
+    min-width: 110px;
+    min-height: 120px;
+    padding: 18px;
+    font-size: 16px;
+    scroll-snap-align: start;
+  }
+
+  .tools-modern-grid {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 18px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tools-card {
+    flex: 0 0 92%;
+    scroll-snap-align: start;
+  }
+
+  .experience-list::-webkit-scrollbar,
+  .skills-modern-grid::-webkit-scrollbar,
+  .tools-modern-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .experience-list::-webkit-scrollbar-thumb,
+  .skills-modern-grid::-webkit-scrollbar-thumb,
+  .tools-modern-grid::-webkit-scrollbar-thumb {
+    background: rgba(192,132,252,.45);
+    border-radius: 999px;
   }
 }
 
@@ -820,8 +871,7 @@ h2 {
     margin-bottom: 36px;
   }
 
-  .grid,
-  .skills-modern-grid {
+  .grid {
     grid-template-columns: 1fr;
   }
 
@@ -833,6 +883,16 @@ h2 {
   .contact-buttons .btn {
     width: 100%;
   }
-}
 
+  .experience-card,
+  .tools-card {
+    flex-basis: 88%;
+  }
+
+  .skill-box {
+    flex: 0 0 calc((100% - 28px) / 3);
+    min-width: 96px;
+    font-size: 14px;
+    padding: 14px;
+  }
 }
