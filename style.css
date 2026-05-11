@@ -362,6 +362,8 @@ h2 {
   padding: 18px;
 
   transition: .25s ease;
+
+  cursor: pointer;
 }
 
 .skill:hover {
@@ -387,7 +389,7 @@ h2 {
 .experience-list {
   display: grid;
 
-  gap: 54px;
+  gap: 36px;
 
   position: relative;
 }
@@ -421,6 +423,8 @@ h2 {
   gap: 68px;
 
   position: relative;
+
+  cursor: pointer;
 }
 
 .experience-card::before {
@@ -488,20 +492,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-.experience-quote {
-  margin-top: 22px;
-
-  padding-left: 22px;
-
-  border-left: 3px solid rgba(236,72,153,.65);
-
-  color: rgba(229,231,244,.72);
-
-  font-size: 19px;
-
-  font-style: italic;
-}
-
 .tags {
   display: flex;
 
@@ -548,6 +538,95 @@ h2 {
   gap: 18px;
 
   flex-wrap: nowrap;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+
+  inset: 0;
+
+  display: none;
+
+  z-index: 2000;
+
+  background: rgba(1, 4, 13, 0.82);
+
+  backdrop-filter: blur(16px);
+
+  padding: 24px;
+
+  overflow-y: auto;
+}
+
+.modal.active {
+  display: block;
+}
+
+.modal-panel {
+  width: min(900px, 100%);
+
+  margin: 40px auto;
+
+  background: #090e1d;
+
+  border: 1px solid rgba(192,132,252,.24);
+
+  border-radius: 26px;
+
+  overflow: hidden;
+
+  box-shadow: 0 30px 120px rgba(0,0,0,.55);
+}
+
+.modal-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 26px;
+
+  border-bottom: 1px solid rgba(255,255,255,.09);
+}
+
+.modal-header h2 {
+  margin: 0;
+
+  color: white;
+
+  text-transform: none;
+
+  letter-spacing: -0.03em;
+
+  font-size: 30px;
+}
+
+.modal-body {
+  padding: 26px;
+}
+
+.case-block {
+  padding: 22px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,.04);
+
+  border: 1px solid rgba(255,255,255,.09);
+}
+
+.case-block p,
+.case-block li {
+  color: #cfd4df;
+}
+
+.case-block ul {
+  padding-left: 22px;
+
+  margin-top: 12px;
 }
 
 /* MOBILE */
@@ -604,12 +683,82 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .experience-list {
+    gap: 36px;
+
+    padding-left: 0;
+  }
+
+  .experience-list::before {
+    display: none;
+  }
+
+  .experience-card {
+    display: block;
+
+    padding: 22px;
+
+    border-radius: 22px;
+
+    background: rgba(255,255,255,.035);
+
+    border: 1px solid rgba(255,255,255,.09);
+  }
+
+  .experience-card::before {
+    display: none;
+  }
+
+  .experience-meta {
+    text-align: left;
+
+    padding-right: 0;
+
+    margin-bottom: 18px;
+  }
+
+  .experience-content {
+    padding-left: 0;
+  }
+
+  .experience-title {
+    font-size: 28px;
+
+    line-height: 1.15;
+  }
+
+  .experience-description {
+    font-size: 16px;
+  }
+
 }
 
 @media (max-width: 560px) {
 
+  header {
+    padding: 14px 16px;
+
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .primary {
+    min-height: 46px;
+
+    padding: 0 18px;
+
+    border-radius: 14px;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+  }
+
   body {
-    padding-top: 100px;
+    padding-top: 92px;
   }
 
   .page {
@@ -624,6 +773,12 @@ h2 {
     font-size: 46px;
   }
 
+  .section-title {
+    font-size: 42px;
+
+    margin-bottom: 36px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
@@ -635,6 +790,38 @@ h2 {
   .hero-actions .btn,
   .contact-buttons .btn {
     width: 100%;
+  }
+
+  .modal {
+    padding: 14px;
+  }
+
+  .modal-panel {
+    margin: 20px auto;
+
+    border-radius: 22px;
+  }
+
+  .modal-header {
+    padding: 20px;
+
+    align-items: flex-start;
+  }
+
+  .modal-header h2 {
+    font-size: 24px;
+  }
+
+  .close-btn {
+    min-height: 42px;
+
+    padding: 0 16px;
+
+    font-size: 14px;
+  }
+
+  .modal-body {
+    padding: 20px;
   }
 
 }
