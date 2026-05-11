@@ -553,7 +553,6 @@ h2 {
   flex-wrap: nowrap;
 }
 /* TOOLS */
-
 .cyan-eyebrow {
   color: var(--cyan);
 }
@@ -631,8 +630,8 @@ h2 {
   font-weight: 600;
 }
 
-
 /* MODAL */
+
 .modal {
   position: fixed;
   inset: 0;
