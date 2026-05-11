@@ -213,102 +213,95 @@
 
       <!-- EXPERIENCE -->
 
-      <section id="experience">
+<section id="experience">
 
-        <div class="eyebrow">
-          Experience
+  <div class="eyebrow">Experience</div>
+
+  <h1 class="section-title">Work History</h1>
+
+  <div class="experience-list">
+
+    <article class="experience-card" onclick="openModal('mim')">
+      <div class="experience-meta">
+        <div class="experience-date">Oct 2025 – Present</div>
+        <div class="experience-company">MiM</div>
+      </div>
+
+      <div class="experience-content">
+        <div class="experience-title">QA Engineer <small>(part-time)</small></div>
+        <p class="experience-description">Non-verbal Social Network Mobile Application</p>
+        <div class="tags">
+          <span class="tag">Jira</span>
+          <span class="tag">Maestro</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Android Studio</span>
+          <span class="tag">iOS Simulator</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Charles Proxy</span>
         </div>
+      </div>
+    </article>
 
-        <h1 class="section-title">
-          Work History
-        </h1>
+    <article class="experience-card" onclick="openModal('softserve')">
+      <div class="experience-meta">
+        <div class="experience-date">Nov 2020 – Present</div>
+        <div class="experience-company">SoftServe</div>
+      </div>
 
-        <div class="experience-list">
-
-          <article
-            class="experience-card"
-            onclick="openModal('mim')"
-          >
-
-            <div class="experience-meta">
-
-              <div class="experience-date">
-                Oct 2025 – Present
-              </div>
-
-              <div class="experience-company">
-                MiM
-              </div>
-
-            </div>
-
-            <div class="experience-content">
-
-              <div class="experience-title">
-                QA Engineer <small>(part-time)</small>
-              </div>
-
-              <p class="experience-description">
-                Non-verbal Social Network Mobile Application
-              </p>
-
-              <div class="tags">
-                <span class="tag">Jira</span>
-                <span class="tag">Maestro</span>
-                <span class="tag">Postman</span>
-                <span class="tag">Android Studio</span>
-                <span class="tag">iOS Simulator</span>
-                <span class="tag">Figma</span>
-                <span class="tag">Charles Proxy</span>
-              </div>
-
-            </div>
-
-          </article>
-
-          <article
-            class="experience-card"
-            onclick="openModal('softserve')"
-          >
-
-            <div class="experience-meta">
-
-              <div class="experience-date">
-                Nov 2020 – Present
-              </div>
-
-              <div class="experience-company">
-                SoftServe
-              </div>
-
-            </div>
-
-            <div class="experience-content">
-
-              <div class="experience-title">
-                QA Engineer
-              </div>
-
-              <p class="experience-description">
-                Healthcare apps · Insurance · Medication Monitoring
-              </p>
-
-              <div class="tags">
-                <span class="tag">Jira</span>
-                <span class="tag">Swagger</span>
-                <span class="tag">FHIR</span>
-                <span class="tag">Postman</span>
-                <span class="tag">Azure DevOps</span>
-                <span class="tag">AWS</span>
-              </div>
-
-            </div>
-
-          </article>
-
+      <div class="experience-content">
+        <div class="experience-title">QA Engineer</div>
+        <p class="experience-description">Healthcare apps · Insurance · Medication Monitoring</p>
+        <div class="tags">
+          <span class="tag">Jira</span>
+          <span class="tag">Swagger</span>
+          <span class="tag">FHIR</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Azure DevOps</span>
+          <span class="tag">AWS</span>
         </div>
+      </div>
+    </article>
 
-      </section>
+    <article class="experience-card" onclick="openModal('mobidev')">
+      <div class="experience-meta">
+        <div class="experience-date">Jul 2019 – Apr 2020</div>
+        <div class="experience-company">MobiDev</div>
+      </div>
+
+      <div class="experience-content">
+        <div class="experience-title">QA Engineer</div>
+        <p class="experience-description">Cryptocurrency Tracker Application</p>
+        <div class="tags">
+          <span class="tag">Jira</span>
+          <span class="tag">Zephyr</span>
+          <span class="tag">Swagger</span>
+          <span class="tag">Postman</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="experience-card" onclick="openModal('sharpminds')">
+      <div class="experience-meta">
+        <div class="experience-date">Sep 2018 – Jul 2019</div>
+        <div class="experience-company">SharpMinds</div>
+      </div>
+
+      <div class="experience-content">
+        <div class="experience-title">QC Engineer</div>
+        <p class="experience-description">Magento E-commerce Projects</p>
+        <div class="tags">
+          <span class="tag">Jira</span>
+          <span class="tag">Zephyr</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Magento Admin Tool</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+</section>
 
       <!-- PROJECTS -->
 
@@ -445,49 +438,176 @@
   </div>
 
   <!-- MODAL -->
-
-  <div
-    id="modal"
-    class="modal"
-    onclick="closeOnBackdrop(event)"
-  >
-
-    <div class="modal-panel">
-
-      <div class="modal-header">
-
-        <div>
-
-          <div
-            class="eyebrow"
-            id="modalCompany"
-          >
-            Experience
-          </div>
-
-          <h2 id="modalTitle">
-            Details
-          </h2>
-
-        </div>
-
-        <button
-          class="btn close-btn"
-          onclick="closeModal()"
-        >
-          Close
-        </button>
-
+<div id="modal" class="modal" onclick="closeOnBackdrop(event)">
+  <div class="modal-panel">
+    <div class="modal-header">
+      <div>
+        <div class="eyebrow" id="modalCompany">Experience</div>
+        <h2 id="modalTitle">Details</h2>
       </div>
 
-      <div
-        id="modalBody"
-        class="modal-body"
-      ></div>
-
+      <button class="btn close-btn" onclick="closeModal()">Close</button>
     </div>
 
+    <div id="modalBody" class="modal-body"></div>
   </div>
+</div>
+
+<script>
+  const data = {
+    softserve: {
+      company: "SoftServe",
+      title: "QA Engineer • Nov 2020 – Present",
+      body: `
+        <div class="case-block">
+          <h3>Projects</h3>
+          <ul>
+            <li>Mediteo healthcare mobile application, Aug 2024 – Present</li>
+            <li>Medication intake monitoring mobile application, Jan 2024 – Feb 2024</li>
+            <li>Calculating insurance web application, Nov 2023 – Dec 2023</li>
+            <li>Dental Practice Management, Nov 2022 – Nov 2023</li>
+            <li>Volunteer project — VeteranHub, May 2023 – Oct 2023</li>
+            <li>Health Care applications, Nov 2020 – Oct 2022</li>
+            <li>Health Care survey of the accelerator, Nov 2020 – Nov 2022</li>
+          </ul>
+
+          <h3>Tools & Technologies</h3>
+          <p>Jira, Swagger, FHIR service, Amazon Chat agent, Azure DevOps, Virtual Assistant, Generative AI, Zephyr, Postman, Metrics, AWS deployment, WordPress, SiteCore, Medidata, Fiddler, Charles.</p>
+
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Analyzing user stories and requirements</li>
+            <li>Analyzing test conditions</li>
+            <li>Writing and reviewing test cases</li>
+            <li>Conducting regression testing</li>
+            <li>Analyzing customer issues and incidents</li>
+            <li>Reporting bugs and incidents</li>
+            <li>Developing and maintaining testing documentation</li>
+            <li>Performing exploratory testing</li>
+            <li>Demo presentation</li>
+            <li>Test metrics gathering and test summary reports</li>
+            <li>Creating new metrics and summary chart reports</li>
+            <li>Creating API collections</li>
+            <li>Web, mobile and tablet testing</li>
+            <li>Preparing test data at admin tools</li>
+            <li>Communicating with customers</li>
+            <li>Web cross-browser testing</li>
+            <li>Requirements analysis and test design</li>
+            <li>Mobile testing</li>
+            <li>Mentoring new team members</li>
+            <li>DB testing</li>
+          </ul>
+        </div>
+      `
+    },
+
+    mim: {
+      company: "MiM",
+      title: "QA Engineer • Oct 2025 – Present, part-time",
+      body: `
+        <div class="case-block">
+          <h3>Project</h3>
+          <p>MiM – Non-verbal Social Network Mobile Application</p>
+
+          <h3>Tools & Technologies</h3>
+          <p>Jira, Maestro, Postman, Android Studio Emulator, iOS Simulator, Figma, Charles Proxy.</p>
+
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Mobile testing</li>
+            <li>Functional and regression testing</li>
+            <li>Writing and maintaining test cases</li>
+            <li>Writing test documentation</li>
+            <li>Testing on Android and iOS devices</li>
+            <li>Testing on emulators and real devices</li>
+            <li>Reporting bugs</li>
+            <li>Verifying visual and non-verbal user flows</li>
+            <li>Supporting QA processes</li>
+            <li>Supporting mobile automation setup using Maestro</li>
+          </ul>
+
+          <h3>Significant Results</h3>
+          <p>Contributed to QA process setup for a startup mobile application focused on non-verbal communication. Created and maintained testing documentation, performed mobile testing on Android and iOS platforms, and supported the initial setup of mobile automation using Maestro.</p>
+        </div>
+      `
+    },
+
+    mobidev: {
+      company: "MobiDev",
+      title: "QA Engineer • Jul 2019 – Apr 2020",
+      body: `
+        <div class="case-block">
+          <h3>Project</h3>
+          <p>Cryptocurrency Tracker Application</p>
+
+          <h3>Tools & Technologies</h3>
+          <p>Jira, Zephyr, Swagger, Postman, PostgreSQL.</p>
+
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Manual testing</li>
+            <li>Reporting bugs</li>
+            <li>Writing and reviewing test cases</li>
+            <li>Creating API collections</li>
+            <li>Writing API tests</li>
+            <li>Mobile testing</li>
+            <li>DB testing</li>
+          </ul>
+
+          <h3>Significant Results</h3>
+          <p>Conducted thorough manual and mobile testing, ensuring a reliable and user-friendly Cryptocurrency Tracker application. Developed and reviewed comprehensive test cases and API collections, significantly enhancing test coverage and project quality. Performed detailed DB testing and wrote API tests, ensuring accurate and efficient data handling.</p>
+        </div>
+      `
+    },
+
+    sharpminds: {
+      company: "SharpMinds",
+      title: "QC Engineer • Sep 2018 – Jul 2019",
+      body: `
+        <div class="case-block">
+          <h3>Project</h3>
+          <p>E-commerce</p>
+
+          <h3>Tools & Technologies</h3>
+          <p>Jira, Zephyr, Postman, Magento Admin Tool.</p>
+
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Manual testing</li>
+            <li>Cross-browser testing</li>
+            <li>Creating checklists</li>
+            <li>Setting modules on Magento 2</li>
+            <li>Test summary reports</li>
+            <li>Creating API collections</li>
+          </ul>
+
+          <h3>Significant Results</h3>
+          <p>Performed comprehensive manual and cross-browser testing, ensuring the reliability and functionality of online stores based on the Magento platform. Created detailed checklists and test project documentation. Successfully set up and configured modules on Magento 2, contributing to seamless store operations. Developed API collections and efficiently reported bugs, leading to timely issue resolution.</p>
+        </div>
+      `
+    }
+  };
+
+  function openModal(key) {
+    const item = data[key];
+
+    document.getElementById("modalCompany").textContent = item.company;
+    document.getElementById("modalTitle").textContent = item.title;
+    document.getElementById("modalBody").innerHTML = item.body;
+
+    document.getElementById("modal").classList.add("active");
+  }
+
+  function closeModal() {
+    document.getElementById("modal").classList.remove("active");
+  }
+
+  function closeOnBackdrop(event) {
+    if (event.target.id === "modal") {
+      closeModal();
+    }
+  }
+</script>
 
 </body>
 </html>
