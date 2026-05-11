@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Vasylyna Petrashchuk | Manual QA Engineer</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -22,11 +20,7 @@
       <a href="#contact">Contact</a>
     </nav>
 
-    <a
-      class="btn primary desktop-only"
-      href="./CV.Vasylyna Petrashchuk.pdf"
-      download
-    >
+    <a class="btn primary desktop-only" href="./CV.Vasylyna Petrashchuk.pdf" download>
       Download CV
     </a>
   </header>
@@ -37,10 +31,7 @@
         <div class="hero-copy">
           <div class="eyebrow">Manual QA Engineer</div>
 
-          <h1>
-            Vasylyna
-            <span>Petrashchuk</span>
-          </h1>
+          <h1>Vasylyna <span>Petrashchuk</span></h1>
 
           <div class="subtitle">
             Web & Mobile Testing • API Testing • Quality Assurance
@@ -53,15 +44,18 @@
 
           <div class="hero-actions">
             <a class="btn social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-              LinkedIn
+              <span class="icon linkedin-icon">in</span>
+              <span>LinkedIn</span>
             </a>
 
             <a class="btn social-btn" href="https://t.me/380954232928" target="_blank" rel="noopener">
-              Telegram
+              <span class="icon">✈</span>
+              <span>Telegram</span>
             </a>
 
             <a class="btn social-btn" href="mailto:petrashchuk.vm@gmail.com">
-              Gmail
+              <span class="icon">✉</span>
+              <span>Gmail</span>
             </a>
           </div>
         </div>
@@ -73,10 +67,8 @@
 
       <section id="about">
         <h2>About Me</h2>
-
         <div class="about-grid">
           <div class="icon-card">♙</div>
-
           <p class="lead">
             QA Engineer focused on manual testing of web and mobile applications.
             Experienced in healthcare, insurance, e-commerce, and startup products.
@@ -87,7 +79,6 @@
 
       <section id="skills">
         <h2>Skills</h2>
-
         <div class="grid">
           <div class="skill"><strong>Manual Testing</strong><small>Functional / exploratory</small></div>
           <div class="skill"><strong>Mobile Testing</strong><small>Android / iOS</small></div>
@@ -105,7 +96,7 @@
         <h1 class="section-title">Work History</h1>
 
         <div class="experience-list">
-          <article class="experience-card">
+          <article class="experience-card" onclick="openModal('mim')">
             <div class="experience-meta">
               <div class="experience-date">Oct 2025 – Present</div>
               <div class="experience-company">MiM</div>
@@ -132,7 +123,7 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card" onclick="openModal('softserve')">
             <div class="experience-meta">
               <div class="experience-date">Nov 2020 – Present</div>
               <div class="experience-company">SoftServe</div>
@@ -164,7 +155,7 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card" onclick="openModal('mobidev')">
             <div class="experience-meta">
               <div class="experience-date">Jul 2019 – Apr 2020</div>
               <div class="experience-company">MobiDev</div>
@@ -189,7 +180,7 @@
             </div>
           </article>
 
-          <article class="experience-card">
+          <article class="experience-card" onclick="openModal('sharpminds')">
             <div class="experience-meta">
               <div class="experience-date">Sep 2018 – Jul 2019</div>
               <div class="experience-company">SharpMinds</div>
@@ -218,25 +209,25 @@
         <h2>Projects</h2>
 
         <div class="projects-grid">
-          <div class="project">
+          <div class="project" onclick="openModal('softserve')">
             <div class="project-icon">💜</div>
             <h3>Healthcare Applications</h3>
             <p>Mobile and web healthcare products, medication tracking, patient workflows.</p>
           </div>
 
-          <div class="project">
+          <div class="project" onclick="openModal('mim')">
             <div class="project-icon">🛡️</div>
             <h3>MiM — Non-verbal Social Network</h3>
             <p>Mobile app focused on communication without text or audio.</p>
           </div>
 
-          <div class="project">
+          <div class="project" onclick="openModal('softserve')">
             <div class="project-icon">🧾</div>
             <h3>Insurance Web Application</h3>
             <p>Web application for calculating insurance costs.</p>
           </div>
 
-          <div class="project">
+          <div class="project" onclick="openModal('sharpminds')">
             <div class="project-icon">🛒</div>
             <h3>E-commerce / Magento</h3>
             <p>Online stores based on Magento platform.</p>
@@ -271,20 +262,134 @@
 
           <div class="contact-links">
             <a class="btn social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
-              LinkedIn
+              <span class="icon linkedin-icon">in</span>
+              <span>LinkedIn</span>
             </a>
 
             <a class="btn social-btn" href="https://t.me/380954232928" target="_blank" rel="noopener">
-              Telegram
+              <span class="icon">✈</span>
+              <span>Telegram</span>
             </a>
 
             <a class="btn social-btn" href="mailto:petrashchuk.vm@gmail.com">
-              Gmail
+              <span class="icon">✉</span>
+              <span>Gmail</span>
             </a>
           </div>
         </div>
       </section>
     </main>
   </div>
+
+  <div id="modal" class="modal" onclick="closeOnBackdrop(event)">
+    <div class="modal-panel">
+      <div class="modal-header">
+        <div>
+          <div class="eyebrow" id="modalCompany">Experience</div>
+          <h2 id="modalTitle">Details</h2>
+        </div>
+        <button class="btn" onclick="closeModal()">Close</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    const data = {
+      softserve: {
+        company: "SoftServe",
+        title: "QA Engineer • Nov 2020 – Present",
+        body: `
+          <div class="case-block">
+            <h3>Healthcare Applications</h3>
+            <p>Testing healthcare, insurance, medication monitoring and dental practice management applications.</p>
+            <ul>
+              <li>Mobile testing on Android and iOS</li>
+              <li>Testing on real devices and emulators</li>
+              <li>API testing using Postman and Bruno</li>
+              <li>Reading and analyzing AWS logs</li>
+              <li>Validating JSON requests and responses</li>
+              <li>Regression, functional, exploratory, smoke and release validation testing</li>
+              <li>Bug reporting and test documentation</li>
+            </ul>
+          </div>
+        `
+      },
+      mim: {
+        company: "MiM",
+        title: "QA Engineer • Oct 2025 – Present",
+        body: `
+          <div class="case-block">
+            <h3>MiM — Non-verbal Social Network</h3>
+            <p>Startup mobile app focused on non-verbal communication.</p>
+            <ul>
+              <li>Mobile testing</li>
+              <li>Functional and regression testing</li>
+              <li>Testing Android/iOS flows</li>
+              <li>Verifying visual and non-verbal user flows</li>
+              <li>Supporting QA documentation</li>
+              <li>Supporting mobile automation setup using Maestro</li>
+            </ul>
+          </div>
+        `
+      },
+      mobidev: {
+        company: "MobiDev",
+        title: "QA Engineer • Jul 2019 – Apr 2020",
+        body: `
+          <div class="case-block">
+            <h3>Cryptocurrency Tracker Application</h3>
+            <p>Mobile application for cryptocurrency tracking.</p>
+            <ul>
+              <li>Manual testing</li>
+              <li>Mobile testing</li>
+              <li>API testing</li>
+              <li>DB testing</li>
+              <li>Creating API collections</li>
+              <li>Bug reporting</li>
+            </ul>
+          </div>
+        `
+      },
+      sharpminds: {
+        company: "SharpMinds",
+        title: "QC Engineer • Sep 2018 – Jul 2019",
+        body: `
+          <div class="case-block">
+            <h3>E-commerce / Magento</h3>
+            <p>Testing e-commerce projects based on Magento platform.</p>
+            <ul>
+              <li>Manual testing</li>
+              <li>Cross-browser testing</li>
+              <li>Creating checklists</li>
+              <li>Magento module setup</li>
+              <li>Test summary reports</li>
+              <li>Bug reporting</li>
+            </ul>
+          </div>
+        `
+      }
+    };
+
+    function openModal(key) {
+      const item = data[key];
+
+      document.getElementById("modalCompany").textContent = item.company;
+      document.getElementById("modalTitle").textContent = item.title;
+      document.getElementById("modalBody").innerHTML = item.body;
+
+      document.getElementById("modal").classList.add("active");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.remove("active");
+    }
+
+    function closeOnBackdrop(event) {
+      if (event.target.id === "modal") {
+        closeModal();
+      }
+    }
+  </script>
 </body>
 </html>
