@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
   <header>
     <a href="#home" class="logo">VP</a>
 
@@ -19,11 +18,12 @@
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#tools">Tools</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <a
-      class="download-btn"
+      class="btn primary desktop-only"
       href="./CV.Vasylyna Petrashchuk.pdf"
       download
     >
@@ -32,152 +32,259 @@
   </header>
 
   <div class="page">
-
     <main>
-
       <section id="home" class="hero">
-
-        <div class="hero-left">
-
-          <span class="label">MANUAL QA ENGINEER</span>
+        <div class="hero-copy">
+          <div class="eyebrow">Manual QA Engineer</div>
 
           <h1>
             Vasylyna
             <span>Petrashchuk</span>
           </h1>
 
-          <p class="subtitle">
+          <div class="subtitle">
             Web & Mobile Testing • API Testing • Quality Assurance
-          </p>
+          </div>
 
-          <p class="description">
+          <p class="lead">
             Experienced QA Engineer with 5+ years of experience in manual testing of web and mobile applications.
-            Skilled in functional, regression, exploratory, API, and mobile testing.
+            Skilled in functional, regression, exploratory, API, and mobile testing on Android and iOS platforms.
           </p>
 
-          <div class="socials">
-
-            <a
-              class="social-btn"
-              href="https://www.linkedin.com/"
-              target="_blank"
-            >
+          <div class="hero-actions">
+            <a class="btn social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
               LinkedIn
             </a>
 
-            <a
-              class="social-btn"
-              href="https://t.me/"
-              target="_blank"
-            >
+            <a class="btn social-btn" href="https://t.me/380954232928" target="_blank" rel="noopener">
               Telegram
             </a>
 
-            <a
-              class="social-btn"
-              href="mailto:petrashchuk.vm@gmail.com"
-            >
+            <a class="btn social-btn" href="mailto:petrashchuk.vm@gmail.com">
               Gmail
             </a>
-
           </div>
-
         </div>
 
-        <section class="hero-right">
-
-          <img
-            src="./My_photo.png"
-            alt="Vasylyna Petrashchuk portfolio photo"
-          />
-
-        </section>
-
+        <div class="photo-card">
+          <img src="./My_photo.png" alt="Vasylyna Petrashchuk portfolio photo" />
+        </div>
       </section>
 
       <section id="about">
-
         <h2>About Me</h2>
 
-        <p class="description">
-          QA Engineer focused on manual testing of web and mobile applications.
-          Experienced in healthcare, insurance, e-commerce, and startup products.
-        </p>
+        <div class="about-grid">
+          <div class="icon-card">♙</div>
 
+          <p class="lead">
+            QA Engineer focused on manual testing of web and mobile applications.
+            Experienced in healthcare, insurance, e-commerce, and startup products.
+            I enjoy building clear QA processes, improving documentation, and supporting stable product releases.
+          </p>
+        </div>
       </section>
 
       <section id="skills">
-
         <h2>Skills</h2>
 
-        <div class="skills-grid">
-
-          <div class="skill-card">Manual Testing</div>
-          <div class="skill-card">API Testing</div>
-          <div class="skill-card">Mobile Testing</div>
-          <div class="skill-card">Regression Testing</div>
-          <div class="skill-card">SQL</div>
-          <div class="skill-card">Jira</div>
-          <div class="skill-card">Postman</div>
-          <div class="skill-card">Charles Proxy</div>
-
+        <div class="grid">
+          <div class="skill"><strong>Manual Testing</strong><small>Functional / exploratory</small></div>
+          <div class="skill"><strong>Mobile Testing</strong><small>Android / iOS</small></div>
+          <div class="skill"><strong>API Testing</strong><small>Postman / Bruno</small></div>
+          <div class="skill"><strong>Web Testing</strong><small>Cross-browser</small></div>
+          <div class="skill"><strong>Regression Testing</strong><small>Release validation</small></div>
+          <div class="skill"><strong>SQL</strong><small>MySQL / PostgreSQL</small></div>
+          <div class="skill"><strong>Test Documentation</strong><small>Test cases / checklists</small></div>
+          <div class="skill"><strong>Agile / Scrum</strong><small>Team collaboration</small></div>
         </div>
-
       </section>
 
       <section id="experience">
+        <div class="eyebrow">Experience</div>
+        <h1 class="section-title">Work History</h1>
 
-        <h2>Experience</h2>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="experience-meta">
+              <div class="experience-date">Oct 2025 – Present</div>
+              <div class="experience-company">MiM</div>
+            </div>
 
-        <div class="experience-card">
+            <div class="experience-content">
+              <div class="experience-title">QA Engineer <small>(part-time)</small></div>
+              <p class="experience-description">Non-verbal Social Network Mobile Application</p>
 
-          <h3>SoftServe</h3>
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">Maestro</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Android Studio</span>
+                <span class="tag">iOS Simulator</span>
+                <span class="tag">Figma</span>
+                <span class="tag">Charles Proxy</span>
+              </div>
 
-          <p>
-            QA Engineer • Healthcare • Insurance • Mobile & Web applications
-          </p>
+              <div class="experience-quote">
+                Contributed to QA process setup for a startup mobile app focused on non-verbal communication.
+                Supported the initial setup of mobile automation using Maestro.
+              </div>
+            </div>
+          </article>
 
+          <article class="experience-card">
+            <div class="experience-meta">
+              <div class="experience-date">Nov 2020 – Present</div>
+              <div class="experience-company">SoftServe</div>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-title">QA Engineer</div>
+              <p class="experience-description">
+                Healthcare apps · Dental Practice Management · Insurance · Medication Monitoring · Mediteo
+              </p>
+
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">Swagger</span>
+                <span class="tag">FHIR</span>
+                <span class="tag">Postman</span>
+                <span class="tag">Azure DevOps</span>
+                <span class="tag">Medidata</span>
+                <span class="tag">Fiddler</span>
+                <span class="tag">Charles</span>
+                <span class="tag">Zephyr</span>
+                <span class="tag">AWS</span>
+              </div>
+
+              <div class="experience-quote">
+                5+ years driving quality across healthcare and insurance platforms.
+                Created API collections, metrics dashboards, test documentation, and supported mobile/web release validation.
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <div class="experience-date">Jul 2019 – Apr 2020</div>
+              <div class="experience-company">MobiDev</div>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-title">QA Engineer</div>
+              <p class="experience-description">Cryptocurrency Tracker Application</p>
+
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">Zephyr</span>
+                <span class="tag">Swagger</span>
+                <span class="tag">Postman</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+
+              <div class="experience-quote">
+                Performed manual, mobile, API and DB testing.
+                Created API collections and improved test coverage for data handling flows.
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-meta">
+              <div class="experience-date">Sep 2018 – Jul 2019</div>
+              <div class="experience-company">SharpMinds</div>
+            </div>
+
+            <div class="experience-content">
+              <div class="experience-title">QC Engineer</div>
+              <p class="experience-description">Magento E-commerce Projects</p>
+
+              <div class="tags">
+                <span class="tag">Jira</span>
+                <span class="tag">Magento</span>
+                <span class="tag">Postman</span>
+                <span class="tag">SQL</span>
+              </div>
+
+              <div class="experience-quote">
+                Performed cross-browser testing, prepared test reports, configured Magento modules, and reported bugs.
+              </div>
+            </div>
+          </article>
         </div>
-
-        <div class="experience-card">
-
-          <h3>MiM</h3>
-
-          <p>
-            QA Engineer • Non-verbal Social Network Startup
-          </p>
-
-        </div>
-
       </section>
 
       <section id="projects">
-
         <h2>Projects</h2>
 
-        <div class="project-card">
-          MiM — Non-verbal Social Network
-        </div>
+        <div class="projects-grid">
+          <div class="project">
+            <div class="project-icon">💜</div>
+            <h3>Healthcare Applications</h3>
+            <p>Mobile and web healthcare products, medication tracking, patient workflows.</p>
+          </div>
 
-        <div class="project-card">
-          Healthcare Applications
-        </div>
+          <div class="project">
+            <div class="project-icon">🛡️</div>
+            <h3>MiM — Non-verbal Social Network</h3>
+            <p>Mobile app focused on communication without text or audio.</p>
+          </div>
 
+          <div class="project">
+            <div class="project-icon">🧾</div>
+            <h3>Insurance Web Application</h3>
+            <p>Web application for calculating insurance costs.</p>
+          </div>
+
+          <div class="project">
+            <div class="project-icon">🛒</div>
+            <h3>E-commerce / Magento</h3>
+            <p>Online stores based on Magento platform.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools">
+        <h2>Tools & Technologies</h2>
+
+        <div class="tools">
+          <div class="tool">Postman</div>
+          <div class="tool">Bruno</div>
+          <div class="tool">Swagger</div>
+          <div class="tool">Jira</div>
+          <div class="tool">Figma</div>
+          <div class="tool">AWS</div>
+          <div class="tool">Charles</div>
+          <div class="tool">Fiddler</div>
+          <div class="tool">PostgreSQL</div>
+          <div class="tool">MongoDB</div>
+        </div>
       </section>
 
       <section id="contact">
+        <h2>Contact Me</h2>
 
-        <h2>Contact</h2>
+        <div class="contact-grid">
+          <p class="lead">
+            Let’s connect. I’m open to interesting QA opportunities, collaborations, and product quality discussions.
+          </p>
 
-        <p class="description">
-          Open to QA opportunities and collaborations.
-        </p>
+          <div class="contact-links">
+            <a class="btn social-btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+              LinkedIn
+            </a>
 
+            <a class="btn social-btn" href="https://t.me/380954232928" target="_blank" rel="noopener">
+              Telegram
+            </a>
+
+            <a class="btn social-btn" href="mailto:petrashchuk.vm@gmail.com">
+              Gmail
+            </a>
+          </div>
+        </div>
       </section>
-
     </main>
-
   </div>
-
 </body>
 </html>
